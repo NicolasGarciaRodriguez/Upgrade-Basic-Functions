@@ -27,3 +27,15 @@
 
 //   sumAll()
 
+// 4. Calcular el promedio
+
+const numbers = [12, 21, 38, 5, 45, 37, 6];
+
+function average() {
+    let reducer = (firstValue, nextValue) => firstValue + nextValue
+    let sum = numbers.reduce(reducer);
+    let avg = sum /= numbers.length
+    console.log(avg)
+}
+
+average()
