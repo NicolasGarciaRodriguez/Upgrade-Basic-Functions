@@ -29,13 +29,68 @@
 
 // 4. Calcular el promedio
 
-const numbers = [12, 21, 38, 5, 45, 37, 6];
+// const numbers = [12, 21, 38, 5, 45, 37, 6];
 
-function average() {
-    let reducer = (firstValue, nextValue) => firstValue + nextValue
-    let sum = numbers.reduce(reducer);
-    let avg = sum /= numbers.length
-    console.log(avg)
-}
+// function average() {
+//     let reducer = (firstValue, nextValue) => firstValue + nextValue
+//     let sum = numbers.reduce(reducer);
+//     let avg = sum /= numbers.length
+//     console.log(avg)
+// }
 
-average()
+// average()
+
+
+// 5. Calcular promedio de strings
+
+// const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub'];
+
+
+
+// function bucle () {
+
+//     for (element in mixedElements) {
+//         if (typeof element === String) {
+//             Number(element.length)
+//         } else {
+//             console.log("error")
+//         }
+//     }
+
+// }
+
+// console.log(mixedElements)
+
+
+
+
+
+// 6. Valores Unicos
+
+
+// const duplicates = [
+//     'sushi',
+//     'pizza',
+//     'burger',
+//     'potatoe',
+//     'pasta',
+//     'ice-cream',
+//     'pizza',
+//     'chicken',
+//     'onion rings',
+//     'pasta',
+//     'soda'
+//   ];
+
+
+//   function removeDuplicates() {
+//       let result = duplicates.filter((item, index) => {
+//           return duplicates.indexOf(item) === index;
+//       })
+//       console.log(result)
+//   }
+
+//   removeDuplicates()
+
+
+
