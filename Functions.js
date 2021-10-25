@@ -11,7 +11,22 @@
 
 // 2. Buscar la palabra más larga
 
+const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.'];
 
+function findLongestWord(param) {
+  
+  let avengerLargo = param[0];
+
+  for(let i = 0; i < avengers.length; i++){
+    // console.log(param[i]);
+    if(param[i].length > avengerLargo.length){
+        avengerLargo = param[i];
+    }
+  }
+  console.log(avengerLargo);
+}
+
+findLongestWord(avengers);
 
 
 // 3. Calcular la suma
@@ -93,4 +108,22 @@
 //   removeDuplicates()
 
 
+// 7. Buscador de nombres
 
+// const nameFinder = [
+//     'Peter',
+//     'Steve',
+//     'Tony',
+//     'Natasha',
+//     'Clint',
+//     'Logan',
+//     'Xabier',
+//     'Bruce',
+//     'Peggy',
+//     'Jessica',
+//     'Marc'
+//   ];
+  
+//   function finderName(param) {
+//     // insert code
+//   }
