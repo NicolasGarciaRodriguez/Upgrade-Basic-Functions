@@ -110,32 +110,72 @@
 
 // 7. Buscador de nombres
 
-const nameFinder = [
-    'Peter',
-    'Steve',
-    'Tony',
-    'Natasha',
-    'Clint',
-    'Logan',
-    'Xabier',
-    'Bruce',
-    'Peggy',
-    'Jessica',
-    'Marc'
-  ];
+// const nameFinder = [
+//     'Peter',
+//     'Steve',
+//     'Tony',
+//     'Natasha',
+//     'Clint',
+//     'Logan',
+//     'Xabier',
+//     'Bruce',
+//     'Peggy',
+//     'Jessica',
+//     'Marc'
+//   ];
   
-  function finderName(param) {
+//   function finderName(param) {
 
-    let busqueda = nameFinder.includes(param)
+//     let busqueda = nameFinder.includes(param)
 
-    if (busqueda === true) {
+//     if (busqueda === true) {
 
-      console.log(busqueda)
-      console.log(nameFinder.indexOf(param))
+//       console.log(busqueda)
+//       console.log(nameFinder.indexOf(param))
 
-    } else {
-      console.log(false)
-    }
-  }
+//     } else {
+//       console.log(false)
+//     }
+//   }
 
-finderName("Bruce")
+// finderName("Bruce")
+
+
+
+// 8. Contador de repeticiones
+
+const counterWords = [
+  'code',
+  'repeat',
+  'eat',
+  'sleep',
+  'code',
+  'enjoy',
+  'sleep',
+  'code',
+  'enjoy',
+  'upgrade',
+  'code'
+];
+
+
+function repeatWords (param) {
+
+  let elementosSinRepetir = param.filter(function(element , position) {
+
+    return param.indexOf(element) == position;
+    
+
+  })
+
+
+  console.log(elementosSinRepetir)
+
+}
+
+
+repeatWords(counterWords)
+
+
+
+
