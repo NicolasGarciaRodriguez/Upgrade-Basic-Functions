@@ -159,23 +159,14 @@ const counterWords = [
 ];
 
 
-function repeatWords (param) {
-
-  let elementosSinRepetir = param.filter(function(element , position) {
-
-    return param.indexOf(element) == position;
-    
-
-  })
-
-
-  console.log(elementosSinRepetir)
-
-}
-
-
-repeatWords(counterWords)
-
-
-
-
+function repeatCounter(counterWords) {
+    let repetidos= {};
+  
+    counterWords.forEach(function(numero){
+     repetidos[numero] = (repetidos[numero] || 0) + 1;
+   });
+ 
+  return repetidos
+ 
+ }
+ console.log(repeatCounter(counterWords));
